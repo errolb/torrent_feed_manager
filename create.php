@@ -19,8 +19,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     if ($write_success) {
         #http://10.0.0.11/vhosts/feedlist/
+        var_dump("SUCCESS!! . "$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]);
         header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
     } else {
+        var_dump("FAIL!! . "$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]);
         echo "Ah! Hell! Something went wrong.";
     }
     
