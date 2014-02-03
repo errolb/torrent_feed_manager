@@ -18,7 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     var_dump(json_encode($feed_list));
     
     if ($write_success) {
-        header('Location: http://10.0.0.11/vhosts/feedlist/');
+        #http://10.0.0.11/vhosts/feedlist/
+        header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
     } else {
         echo "Ah! Hell! Something went wrong.";
     }
