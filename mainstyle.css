@@ -1,0 +1,65 @@
+body {
+    background-color:#39424b;
+    font-family: Consolas,"Liberation Mono",Courier,monospace;
+    color:#a3a99d;
+}
+#wrap {
+    width:960px;
+    margin-left:auto;
+    margin-right:auto;
+}
+h1, h2 {color:#95b6c7;font-family: Arial, Helvetica, sans-serif;}
+h2 {font-size:1em; }
+form label {font-size: 0.9em;}
+form input {
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-width:0px;
+    padding:5px;
+    color:gray;
+    -moz-box-shadow: 1px 1px 1px #353e46;
+    -webkit-box-shadow: 1px 1px 1px #353e46;
+    box-shadow: 1px 1px 1px #353e46;
+}
+#formDelete {
+    display:none;
+}
+dl * {font-size:0.9em;}
+button {
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-width:0px;
+    display:block;
+    float:right;
+    width:50px;
+    color:#fff;
+    background-color:#c30000;
+}
+button:hover {
+    background-color:#d20101;
+}
+button:active {
+    background-color:#95b6c7;
+    color:#fff;
+}
+
+.showme {
+    visibility:visible;
+}
+.hideme {
+    background-color:#434d58;
+    color:#939890;
+    -moz-box-shadow: 1px 1px 1px #353e46;
+    -webkit-box-shadow: 1px 1px 1px #353e46;
+    box-shadow: 1px 1px 1px #353e46;
+}
+dt {
+    color:#beca4c;padding:10px 0 0 0;
+}
+dd {
+    color:#a3a99d; margin: 0 0 0 0;
+    border-style:dotted;
+    border-width:0 0 1px 0;
+    padding:0 0 10px 0;
+}
+
