@@ -1,7 +1,7 @@
 <?php
-		# /home/narkath/.torrent_scraper/feed_list.json
-		# put $path_to_json to where the torrent scraper's json db file is
-    $path_to_json = '/<path>/<to>/<feedlist>/feed_list.json';
+		# Set $path_to_json to where you create the torrent scraper's json db file is
+		# Be sure to create this file in a convenient location.
+    $path_to_json = '/Users/admin/Desktop/feed_list.json';
     $command = 'cat ' . $path_to_json;
     $rawjson = shell_exec($command);
     $feed_list = json_decode($rawjson);

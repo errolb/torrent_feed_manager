@@ -23,10 +23,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $write_success = fwrite($fp, json_encode($feed_list));
     fclose($fp);
     chmod($path_to_json, 0777);
-    var_dump(json_encode($feed_list));
     
     if ($write_success) {
-        header('Location: http://10.0.0.11/vhosts/feedlist/');
+        // Redirect back to main page after write
+        $whereiam = dirname("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+        header("Location: $whereiam");
     } else {
         echo "Ah! Hell! Something went wrong.";
     }
