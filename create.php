@@ -7,8 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     include('read.php');
    
     $response = array('feedTitle' => $_POST['feed_name'], 'feedUrl' => $_POST['feed_url']);
-    
-    #add to object array
+     
     $feed_list->rss[]= $response;
 
     $fp = fopen($path_to_json, 'w');
